@@ -1,0 +1,4 @@
+category: OCaml
+requires: libgd2 libgd-devel ocaml-base
+sdesc: "OCaml GD graphics library bindings"
+ldesc: "GD4O is an OCaml interface to the GD graphics library."
