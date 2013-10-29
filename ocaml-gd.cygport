@@ -1,0 +1,17 @@
+inherit ocaml
+
+NAME="ocaml-gd"
+VERSION=1.0a5
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="OCaml GD graphics library bindings"
+DESCRIPTION="GD4O is an OCaml interface to the GD graphics library."
+HOMEPAGE="http://matt.gushee.net/software/gd4o/"
+SRC_URI="mirror://sourceforge/gd4o/gd4o-${VERSION}.tar.gz"
+SRC_DIR="gd4o-${VERSION}"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake all opt
+}
